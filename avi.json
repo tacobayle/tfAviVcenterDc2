@@ -36,7 +36,7 @@
         },
         "networks": [
           {
-            "avi_ipam_pool": "10.41.134.129-10.41.134.130",
+            "avi_ipam_pool": "10.41.132.131-10.41.132.132",
             "cidr": "10.41.132.0/22",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
@@ -45,7 +45,7 @@
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.130.160-100.64.130.179",
+            "avi_ipam_pool": "100.64.130.170-100.64.130.179",
             "cidr": "100.64.130.0/24",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
@@ -63,7 +63,7 @@
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.132.160-100.64.132.179",
+            "avi_ipam_pool": "100.64.132.170-100.64.132.179",
             "cidr": "100.64.132.0/24",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
@@ -87,7 +87,7 @@
                 "duration": 0,
                 "enabled": true
               },
-            "vcenter_folder": "nic-Avi-vCenter",
+            "vcenter_folder": "nic-Avi-vCenter-dc2",
             "vcpus_per_se": 2
           },
           {
@@ -104,7 +104,7 @@
               "duration": 0,
               "enabled": true
             },
-            "vcenter_folder": "nic-Avi-vCenter",
+            "vcenter_folder": "nic-Avi-vCenter-dc2",
             "vcpus_per_se": 2
           },
           {
@@ -120,7 +120,7 @@
                 "duration": 0,
                 "enabled": true
               },
-            "vcenter_folder": "nic-Avi-vCenter",
+            "vcenter_folder": "nic-Avi-vCenter-dc2",
             "vcpus_per_se": 2
           }
         ],
