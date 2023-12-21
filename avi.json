@@ -22,7 +22,7 @@
           "user_profile_ref": "/api/useraccountprofile?name=Default-User-Account-Profile"
         }
       ],
-      "domain": "dc1.alb.com",
+      "domain": "dc2.alb.com",
       "cloud": {
         "dhcp_enabled": "true",
         "name": "Default-Cloud",
