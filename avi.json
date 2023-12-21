@@ -54,7 +54,7 @@
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.131.160-100.64.131.179",
+            "avi_ipam_pool": "100.64.131.170-100.64.131.179",
             "cidr": "100.64.131.0/24",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
@@ -447,83 +447,6 @@
               "type": "V4",
               "pool_ref": "pool2-vmw-avi",
               "services": [
-                {
-                  "port": 443,
-                  "enable_ssl": "true"
-                }
-              ]
-            },
-            {
-              "name": "app-security",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
-              "type": "V4",
-              "pool_ref": "pool1-vmw-hello",
-              "application_profile_ref": "System-HTTP",
-              "http_policies" : [
-                {
-                  "http_policy_set_ref": "/api/httppolicyset?name=http-request-header",
-                  "index": 11
-                }
-              ],
-              "services": [
-                {
-                  "port": 80,
-                  "enable_ssl": "false"
-                },
-                {
-                  "port": 443,
-                  "enable_ssl": "true"
-                }
-              ]
-            },
-            {
-              "name": "app-content-switching",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
-              "type": "V4",
-              "pool_ref": "pool2-vmw-avi",
-              "http_policies" : [
-                {
-                  "http_policy_set_ref": "/api/httppolicyset?name=http-request-policy-app3-content-switching-vmw",
-                  "index": 11
-                }
-              ],
-              "services": [
-                {
-                  "port": 80,
-                  "enable_ssl": "false"
-                },
-                {
-                  "port": 443,
-                  "enable_ssl": "true"
-                }
-              ]
-            },
-            {
-              "name": "app-waf",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
-              "type": "V4",
-              "pool_ref": "pool3-vmw-waf",
-              "services": [
-                {
-                  "port": 443,
-                  "enable_ssl": "true"
-                }
-              ]
-            },
-            {
-              "name": "app-analytics",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
-              "type": "V4",
-              "pool_ref": "pool1-vmw-hello",
-              "services": [
-                {
-                  "port": 80,
-                  "enable_ssl": "false"
-                },
                 {
                   "port": 443,
                   "enable_ssl": "true"

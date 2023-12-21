@@ -12,10 +12,6 @@ output "jump" {
   value = vsphere_virtual_machine.jump.default_ip_address
 }
 
-output "self_service_portal" {
-  value = "http://${vsphere_virtual_machine.jump.default_ip_address}/lbaas/lbaas.html"
-}
-
 output "controllers" {
   value = vsphere_virtual_machine.controller.*.default_ip_address
 }
