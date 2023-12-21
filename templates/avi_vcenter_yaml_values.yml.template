@@ -1,0 +1,50 @@
+controllerPrivateIps: |
+  ${controller_ips}
+controller:
+  cluster: ${controller_cluster}
+  ntp: |
+    ${controller_ntp}
+  dns: |
+    ${controller_dns}
+  environment: vcenter
+  floating_ip : ""
+  aviCredsJsonFile: ${aviCredsJsonFile}
+avi_password: ${avi_password}
+avi_old_password: ${avi_old_password}
+avi_version: ${avi_version}
+avi_username: ${avi_username}
+vsphere_username: ${vsphere_username}
+vsphere_password: ${vsphere_password}
+vsphere_server: ${vsphere_server}
+tenants: |
+  ${tenants}
+users: |
+  ${users}
+vcenter:
+  domains: |
+    [{"name": ${domain}}]
+  ipam: |
+    ${ipam}
+  cloud:
+    name: ${cloud_name}
+    dc: ${dc}
+    content_lib:
+      id: ${content_library_id}
+      name: ${content_library_name}
+    dhcp_enabled: ${dhcp_enabled}
+    networks: |
+      ${networks}
+    contexts: |
+      ${contexts}
+    additional_subnets: |
+      ${additional_subnets}
+    service_engine_groups: |
+      ${service_engine_groups}
+    pools: |
+      ${pools}
+    httppolicyset: |
+      ${httppolicyset}
+    applicationprofile: |
+      ${applicationprofile}
+    virtual_services: |
+      ${virtual_services}
