@@ -45,7 +45,6 @@
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.130.170-100.64.130.179",
             "cidr": "100.64.130.0/24",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
