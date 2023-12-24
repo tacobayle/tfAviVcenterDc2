@@ -46,7 +46,7 @@
           {
             "avi_ipam_pool": "100.64.130.170-100.64.130.179",
             "cidr": "100.64.130.0/24",
-            "dhcp_enabled": true,
+            "dhcp_enabled": false,
             "exclude_discovered_subnets": true,
             "management": false,
             "name": "vxw-dvs-34-virtualwire-117-sid-1080116-sof2-01-vc08-avi-dev113",
@@ -55,7 +55,7 @@
           {
             "avi_ipam_pool": "100.64.131.170-100.64.131.179",
             "cidr": "100.64.131.0/24",
-            "dhcp_enabled": true,
+            "dhcp_enabled": false,
             "exclude_discovered_subnets": true,
             "management": false,
             "name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
@@ -64,7 +64,7 @@
           {
             "avi_ipam_pool": "100.64.132.170-100.64.132.179",
             "cidr": "100.64.132.0/24",
-            "dhcp_enabled": true,
+            "dhcp_enabled": false,
             "exclude_discovered_subnets": true,
             "management": false,
             "name": "vxw-dvs-34-virtualwire-119-sid-1080118-sof2-01-vc08-avi-dev115",
