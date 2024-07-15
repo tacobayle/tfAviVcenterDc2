@@ -28,45 +28,36 @@
         "name": "Default-Cloud",
         "ipam": {
           "networks": [
-            "vxw-dvs-34-virtualwire-117-sid-1080116-sof2-01-vc08-avi-dev113",
-            "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-            "vxw-dvs-34-virtualwire-119-sid-1080118-sof2-01-vc08-avi-dev115"
+            "vxw-dvs-34-virtualwire-3-sid-6120002-wdc-06-vc12-avi-mgmt",
+            "vxw-dvs-34-virtualwire-116-sid-6120115-wdc-06-vc12-avi-dev112",
+            "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116"
           ]
         },
         "networks": [
           {
-            "cidr": "10.41.132.0/22",
+            "cidr": "10.206.112.0/22",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
             "management": true,
-            "name": "vxw-dvs-34-virtualwire-3-sid-1080002-sof2-01-vc08-avi-mgmt",
+            "name": "vxw-dvs-34-virtualwire-3-sid-6120002-wdc-06-vc12-avi-mgmt",
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.130.170-100.64.130.179",
-            "cidr": "100.64.130.0/24",
-            "dhcp_enabled": false,
+            "avi_ipam_pool": "100.64.129.110-100.64.129.119",
+            "cidr": "100.64.129.0/24",
+            "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
             "management": false,
-            "name": "vxw-dvs-34-virtualwire-117-sid-1080116-sof2-01-vc08-avi-dev113",
+            "name": "vxw-dvs-34-virtualwire-116-sid-6120115-wdc-06-vc12-avi-dev112",
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.131.170-100.64.131.179",
-            "cidr": "100.64.131.0/24",
+            "avi_ipam_pool": "100.64.133.110-100.64.133.119",
+            "cidr": "100.64.133.0/24",
             "dhcp_enabled": false,
             "exclude_discovered_subnets": true,
             "management": false,
-            "name": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-            "type": "V4"
-          },
-          {
-            "avi_ipam_pool": "100.64.132.170-100.64.132.179",
-            "cidr": "100.64.132.0/24",
-            "dhcp_enabled": false,
-            "exclude_discovered_subnets": true,
-            "management": false,
-            "name": "vxw-dvs-34-virtualwire-119-sid-1080118-sof2-01-vc08-avi-dev115",
+            "name": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116",
             "type": "V4"
           }
         ],
@@ -128,24 +119,24 @@
             "lb_algorithm": "LB_ALGORITHM_ROUND_ROBIN",
             "default_server_port": 80,
             "avi_app_server_ips": [
-              "100.64.130.223",
-              "100.64.130.224"
+              "100.64.129.211",
+              "100.64.129.212"
             ]
           },
           {
             "name": "pool2-vmw-avi",
             "default_server_port": 8080,
             "avi_app_server_ips": [
-              "100.64.130.223",
-              "100.64.130.224"
+              "100.64.129.211",
+              "100.64.129.212"
             ]
           },
           {
             "name": "pool3-vmw-waf",
             "default_server_port": 8081,
             "avi_app_server_ips": [
-              "100.64.130.223",
-              "100.64.130.224"
+              "100.64.129.211",
+              "100.64.129.212"
             ]
           }
         ],
@@ -409,8 +400,8 @@
           "dns" : [
             {
               "name": "app-dns",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
+              "network_ref": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116"",
+              "cidr": "100.64.133.0/24",
               "type": "V4",
               "services" : [
                 {
@@ -423,8 +414,8 @@
           "http": [
             {
               "name": "app-hello-world",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
+              "network_ref": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116"",
+              "cidr": "100.64.133.0/24",
               "type": "V4",
               "pool_ref": "pool1-vmw-hello",
               "services": [
@@ -440,8 +431,8 @@
             },
             {
               "name": "app-avi",
-              "network_ref": "vxw-dvs-34-virtualwire-118-sid-1080117-sof2-01-vc08-avi-dev114",
-              "cidr": "100.64.131.0/24",
+              "network_ref": "vxw-dvs-34-virtualwire-120-sid-6120119-wdc-06-vc12-avi-dev116"",
+              "cidr": "100.64.133.0/24",
               "type": "V4",
               "pool_ref": "pool2-vmw-avi",
               "services": [
