@@ -84,12 +84,12 @@ resource "vsphere_virtual_machine" "jump" {
 
   provisioner "file" {
     source      = var.jump["private_key_path"]
-    destination = "~/.ssh/${basename(var.jump["private_key_path"])}"
+    destination = "/home/ubuntu/.ssh/${basename(var.jump["private_key_path"])}"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "chmod 600 ~/.ssh/${basename(var.jump.private_key_path)}"
+      "chmod 600 /home/ubuntu/.ssh/${basename(var.jump.private_key_path)}"
     ]
   }
 
