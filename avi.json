@@ -22,7 +22,7 @@
           "user_profile_ref": "/api/useraccountprofile?name=Default-User-Account-Profile"
         }
       ],
-      "domain": "dc2.alb.com",
+      "domain": "dc2.avi.com",
       "cloud": {
         "dhcp_enabled": "true",
         "name": "Default-Cloud",
@@ -43,7 +43,7 @@
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.129.110-100.64.129.119",
+            "avi_ipam_pool": "100.64.129.120-100.64.129.129",
             "cidr": "100.64.129.0/24",
             "dhcp_enabled": true,
             "exclude_discovered_subnets": true,
@@ -52,7 +52,7 @@
             "type": "V4"
           },
           {
-            "avi_ipam_pool": "100.64.133.110-100.64.133.119",
+            "avi_ipam_pool": "100.64.133.120-100.64.133.129",
             "cidr": "100.64.133.0/24",
             "dhcp_enabled": false,
             "exclude_discovered_subnets": true,
